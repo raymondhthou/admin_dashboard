@@ -15,6 +15,10 @@ div .icons > img {
     height: 30px;
 }
 
+.card_icons {
+    height: 20px;
+}
+
 .container {
     display: grid;
     height: 100vh;
@@ -109,4 +113,22 @@ div .icons > img {
 /* main-content */
 .project_content {
     background-color: red;
+    display: grid;
+    grid-template-columns: 3fr 0.7fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.left_projects {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.project_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.cards {
+    border: 2px solid black;
 }
